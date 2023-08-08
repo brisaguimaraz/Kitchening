@@ -8,5 +8,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 /* rutas */
 app.get('/', (req,res) => res.sendFile(path.join(__dirname, 'views', 'home.html')));
+app.get('/detalle-producto',(req,res) => res.sendFile(path.join(__dirname,'views','detalleProducto.html')));
 
 app.listen(PORT, console.log('Server running in http://localhost:' + PORT));
